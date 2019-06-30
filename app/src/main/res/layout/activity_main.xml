@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    >
 
     <VideoView
         android:id="@+id/videoView"
@@ -11,18 +12,58 @@
         android:layout_height="match_parent">
     </VideoView>
 
-    <Button
-        android:id="@+id/button"
+    <ImageView android:id="@+id/imageViewLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:src="@drawable/pwr_logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        />
+
+    <ImageView android:id="@+id/imageViewVideoIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home_page_video_icon"
+        android:scaleType="centerInside"
+        android:layout_below="@+id/imageViewLogo"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageViewVideoIcon"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Your free, personalized Pet Wellness Report is brought to you by people who love pets and believe that great wellness care starts at home."
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        android:layout_weight="0"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/button2"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="20dp"
+        android:background="@color/colorGreen"
+        android:text="GET STARTED" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_toRightOf="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_width="250dp"
+        android:textSize="20dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="SING IN" />
 
     <!--android:layout_alignParentLeft="true"-->
     <!--android:layout_alignParentRight="true"-->
