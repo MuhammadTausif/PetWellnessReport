@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     //create class reference
     VideoView vid;
+    VideoView videoview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         vid = (VideoView) findViewById(R.id.videoView);
 
-        VideoView videoview = (VideoView) findViewById(R.id.videoView);
+        videoview = (VideoView) findViewById(R.id.videoView);
         Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.home_page_video_webm);
         videoview.setVideoURI(uri);
         videoview.start();
@@ -34,6 +35,19 @@ public class MainActivity extends AppCompatActivity {
                 mp.setLooping(true);
             }
         });
+
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();  // Always call the superclass method first
+        videoview.start();
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        videoview.start();
 
     }
 

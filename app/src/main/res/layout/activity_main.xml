@@ -30,13 +30,16 @@
         android:layout_marginTop="30dp"
         android:layout_centerInParent="true" />
 
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/imageViewVideoIcon"
         android:layout_margin="20dp"
+        android:background="@color/colorGrayTransparent"
         android:gravity="center"
+        android:padding="10dp"
         android:text="Your free, personalized Pet Wellness Report is brought to you by people who love pets and believe that great wellness care starts at home."
         android:textColor="#ffffff"
         android:textSize="16dp"
@@ -48,25 +51,23 @@
         android:layout_width="250dp"
         android:layout_height="60dp"
         android:layout_centerInParent="true"
-        android:layout_above="@+id/button2"
+        android:layout_above="@+id/button1"
         android:textSize="20dp"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorGray"
         android:layout_margin="20dp"
         android:background="@color/colorGreen"
         android:text="GET STARTED" />
-
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button1"
         android:layout_width="250dp"
-        android:textSize="20dp"
         android:layout_height="60dp"
         android:layout_centerInParent="true"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="20dp"
-        android:text="SING IN" />
 
-    <!--android:layout_alignParentLeft="true"-->
-    <!--android:layout_alignParentRight="true"-->
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:background="@color/colorYellow"
+        android:layout_alignParentBottom="true"
+        android:text="SING IN" />
 
 </RelativeLayout>
 
