@@ -1,5 +1,6 @@
 package com.tausifasia.petwellnessreport;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.MediaController;
 import android.widget.VideoView;
+
+import com.tausifasia.petwellnessreport.ui.login.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,6 +39,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void openReportAdsActivity(View view){
+        Intent intent = new Intent(this, ReportAdsActivity.class);
+        startActivity(intent);
+    }
+
+    public void login(View view){
+        startActivity(new Intent(this, LoginActivity.class));
     }
 
     @Override

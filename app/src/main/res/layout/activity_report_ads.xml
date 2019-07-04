@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportAdsActivity">
+
+    <RelativeLayout
+        android:id="@+id/topPanelAds1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true">
+        <ImageView android:id="@+id/imageViewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pwr_logo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="20dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="30dp"
+            android:onClick="openMainActivity"
+            android:text="GET STARTED" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mainText1"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/topPanelAds1"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Your pet is unique. So is your report."
+        android:textSize="35dp"
+        android:layout_weight="0" />
+
+    <TextView
+        android:id="@+id/mainText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mainText1"
+        android:layout_marginTop="-10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Whether you’re caring for a Maltese or a mixed, a Siamese or a shorthair,
+we tailor the PWR to your pet’s unique needs."
+        android:textSize="15dp"
+        android:layout_weight="0" />
+
+    <LinearLayout
+        android:id="@+id/adsIcone"
+        android:layout_below="@id/mainText2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/home_icon1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/home_icon1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="20dp"
+                />
+            <ImageView
+                android:id="@+id/home_icon2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/home_icon2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="20dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/home_icon3"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/home_icon3"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="20dp"
+                />
+            <ImageView
+                android:id="@+id/home_icon4"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/home_icon4"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="20dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

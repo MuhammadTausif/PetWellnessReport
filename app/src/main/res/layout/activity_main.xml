@@ -56,18 +56,31 @@
         android:textColor="@color/colorGray"
         android:layout_margin="20dp"
         android:background="@color/colorGreen"
-        android:text="GET STARTED" />
+        android:text="GET STARTED"
+        android:onClick="login"
+        />
     <Button
         android:id="@+id/button1"
         android:layout_width="250dp"
         android:layout_height="60dp"
+        android:onClick="login"
         android:layout_centerInParent="true"
-
         android:textSize="20dp"
         android:layout_margin="20dp"
         android:background="@color/colorYellow"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/buttonArrow"
         android:text="SING IN" />
+
+    <Button
+        android:id="@+id/buttonArrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="openReportAdsActivity"
+        android:layout_centerInParent="true"
+        android:background="@drawable/pwr_arrow"
+        android:layout_alignParentBottom="true" />
+
+
 
 </RelativeLayout>
 
